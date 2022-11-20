@@ -3,7 +3,7 @@ import axios from 'axios'
 import { baseURL } from "../../config"
 // 创建 axios 实例
 const instance = axios.create({
-    baseURL:  "http://192.168.31.214:3001",
+    baseURL:  baseURL,
     timeout: 60000,
     headers: {
       'Content-Type': 'application/json',

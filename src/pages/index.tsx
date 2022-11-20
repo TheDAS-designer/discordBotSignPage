@@ -1,18 +1,13 @@
-import { useWeb3Modal, Web3Button } from '@web3modal/react'
+import { Web3Button } from '@web3modal/react'
 import { useAccount, useSignMessage } from 'wagmi'
-import Head from 'next/head'
-import Euck from '../components/Euck'
 import { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
 import { useRouter } from "next/router";
-
-import {post} from "../utils/requestArray.js"
 import { sign } from './api/sign'
 
 export default function HomePage() {
   var router = useRouter();
   const { isConnected, address } = useAccount()
-  const { open } = useWeb3Modal()
+  // const { open } = useWeb3Modal()
   const discordId = router.query["discordId"];
   const discordUserName = router.query["discordUserName"];
   // let { discordId, discordUserName } = useParams()
