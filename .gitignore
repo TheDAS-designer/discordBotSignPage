@@ -4,7 +4,7 @@ npm-debug.log
 /.next/
 
 # Local development
-*.env
+# *.env
 *.dev
 .DS_Store
 
