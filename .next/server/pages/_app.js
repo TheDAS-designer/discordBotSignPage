@@ -1,90 +1,42 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 505:
+/***/ "./src/pages/_app.tsx":
+/*!****************************!*\
+  !*** ./src/pages/_app.tsx ***!
+  \****************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ App)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(721);
-/* harmony import */ var _web3modal_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(544);
-/* harmony import */ var wagmi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(998);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(562);
-/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_4__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__, _web3modal_react__WEBPACK_IMPORTED_MODULE_2__, wagmi__WEBPACK_IMPORTED_MODULE_3__]);
-([_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__, _web3modal_react__WEBPACK_IMPORTED_MODULE_2__, wagmi__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
-
-
-
-
-
-// 1. Get projectID at https://cloud.walletconnect.com
-if (false) {}
-const projectId = "123123";
-// 2. Configure wagmi client
-const chains = [
-    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.mainnet,
-    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.polygon,
-    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.optimism,
-    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.arbitrum
-];
-const { provider  } = (0,wagmi__WEBPACK_IMPORTED_MODULE_3__.configureChains)(chains, [
-    (0,_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__/* .walletConnectProvider */ .Tg)({
-        projectId
-    })
-]);
-const wagmiClient = (0,wagmi__WEBPACK_IMPORTED_MODULE_3__.createClient)({
-    autoConnect: true,
-    connectors: (0,_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__/* .modalConnectors */ .b6)({
-        appName: "web3Modal",
-        chains
-    }),
-    provider
-});
-// 3. Configure modal ethereum client
-const ethereumClient = new _web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__/* .EthereumClient */ .J0(wagmiClient, chains);
-// 4. Wrap your app with WagmiProvider and add <Web3Modal /> compoennt
-function App({ Component , pageProps  }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(wagmi__WEBPACK_IMPORTED_MODULE_3__.WagmiConfig, {
-                client: wagmiClient,
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
-                    ...pageProps
-                })
-            }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_web3modal_react__WEBPACK_IMPORTED_MODULE_2__/* .Web3Modal */ .Eg, {
-                projectId: projectId,
-                theme: "dark",
-                accentColor: "default",
-                ethereumClient: ethereumClient
-            })
-        ]
-    });
-}
-
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ App)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @web3modal/ethereum */ \"./node_modules/@web3modal/ethereum/dist/index.js\");\n/* harmony import */ var _web3modal_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @web3modal/react */ \"./node_modules/@web3modal/react/dist/index.js\");\n/* harmony import */ var wagmi__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! wagmi */ \"wagmi\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles.css */ \"./src/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_4__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__, _web3modal_react__WEBPACK_IMPORTED_MODULE_2__, wagmi__WEBPACK_IMPORTED_MODULE_3__]);\n([_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__, _web3modal_react__WEBPACK_IMPORTED_MODULE_2__, wagmi__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\n// 1. Get projectID at https://cloud.walletconnect.com\nif (false) {}\nconst projectId = \"c73771ec4df730b9a5398690ac979cd0\";\n// 2. Configure wagmi client\nconst chains = [\n    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.mainnet,\n    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.polygon,\n    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.optimism,\n    wagmi__WEBPACK_IMPORTED_MODULE_3__.chain.arbitrum\n];\nconst { provider  } = (0,wagmi__WEBPACK_IMPORTED_MODULE_3__.configureChains)(chains, [\n    (0,_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__.walletConnectProvider)({\n        projectId\n    })\n]);\nconst wagmiClient = (0,wagmi__WEBPACK_IMPORTED_MODULE_3__.createClient)({\n    autoConnect: true,\n    connectors: (0,_web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__.modalConnectors)({\n        appName: \"web3Modal\",\n        chains\n    }),\n    provider\n});\n// 3. Configure modal ethereum client\nconst ethereumClient = new _web3modal_ethereum__WEBPACK_IMPORTED_MODULE_1__.EthereumClient(wagmiClient, chains);\n// 4. Wrap your app with WagmiProvider and add <Web3Modal /> compoennt\nfunction App({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(wagmi__WEBPACK_IMPORTED_MODULE_3__.WagmiConfig, {\n                client: wagmiClient,\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                    ...pageProps\n                }, void 0, false, {\n                    fileName: \"D:\\\\devData\\\\discordBotSignPage\\\\react\\\\src\\\\pages\\\\_app.tsx\",\n                    lineNumber: 30,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"D:\\\\devData\\\\discordBotSignPage\\\\react\\\\src\\\\pages\\\\_app.tsx\",\n                lineNumber: 29,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_web3modal_react__WEBPACK_IMPORTED_MODULE_2__.Web3Modal, {\n                projectId: projectId,\n                theme: \"dark\",\n                accentColor: \"default\",\n                ethereumClient: ethereumClient\n            }, void 0, false, {\n                fileName: \"D:\\\\devData\\\\discordBotSignPage\\\\react\\\\src\\\\pages\\\\_app.tsx\",\n                lineNumber: 33,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvX2FwcC50c3guanMiLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7QUFBQTtBQUE0RjtBQUNoRDtBQUU2QjtBQUNuRDtBQUV0QixzREFBc0Q7QUFDdEQsSUFBSSxLQUFtQyxFQUNyQyxFQUEwRTtBQUM1RSxNQUFNWSxZQUFZSixrQ0FBa0M7QUFFcEQsNEJBQTRCO0FBQzVCLE1BQU1LLFNBQVM7SUFBQ1QsZ0RBQWE7SUFBRUEsZ0RBQWE7SUFBRUEsaURBQWM7SUFBRUEsaURBQWM7Q0FBQztBQUM3RSxNQUFNLEVBQUVjLFNBQVEsRUFBRSxHQUFHYixzREFBZUEsQ0FBQ1EsUUFBUTtJQUFDWCwwRUFBcUJBLENBQUM7UUFBRVU7SUFBVTtDQUFHO0FBQ25GLE1BQU1PLGNBQWNiLG1EQUFZQSxDQUFDO0lBQy9CYyxhQUFhLElBQUk7SUFDakJDLFlBQVlwQixvRUFBZUEsQ0FBQztRQUFFcUIsU0FBUztRQUFhVDtJQUFPO0lBQzNESztBQUNGO0FBRUEscUNBQXFDO0FBQ3JDLE1BQU1LLGlCQUFpQixJQUFJdkIsK0RBQWNBLENBQUNtQixhQUFhTjtBQUV2RCxzRUFBc0U7QUFDdkQsU0FBU1csSUFBSSxFQUFFQyxVQUFTLEVBQUVDLFVBQVMsRUFBWSxFQUFFO0lBRTlELHFCQUNFOzswQkFDRSw4REFBQ25CLDhDQUFXQTtnQkFBQ29CLFFBQVFSOzBCQUNuQiw0RUFBQ007b0JBQVcsR0FBR0MsU0FBUzs7Ozs7Ozs7Ozs7MEJBRzFCLDhEQUFDdkIsdURBQVNBO2dCQUNSUyxXQUFXQTtnQkFDWGdCLE9BQU07Z0JBQ05DLGFBQVk7Z0JBQ1pOLGdCQUFnQkE7Ozs7Ozs7O0FBSXhCLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZWFjdC1leGFtcGxlLy4vc3JjL3BhZ2VzL19hcHAudHN4P2Y5ZDYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgRXRoZXJldW1DbGllbnQsIG1vZGFsQ29ubmVjdG9ycywgd2FsbGV0Q29ubmVjdFByb3ZpZGVyIH0gZnJvbSAnQHdlYjNtb2RhbC9ldGhlcmV1bSdcclxuaW1wb3J0IHsgV2ViM01vZGFsIH0gZnJvbSAnQHdlYjNtb2RhbC9yZWFjdCdcclxuaW1wb3J0IHR5cGUgeyBBcHBQcm9wcyB9IGZyb20gJ25leHQvYXBwJ1xyXG5pbXBvcnQgeyBjaGFpbiwgY29uZmlndXJlQ2hhaW5zLCBjcmVhdGVDbGllbnQsIFdhZ21pQ29uZmlnIH0gZnJvbSAnd2FnbWknXHJcbmltcG9ydCAnLi4vc3R5bGVzLmNzcydcclxuXHJcbi8vIDEuIEdldCBwcm9qZWN0SUQgYXQgaHR0cHM6Ly9jbG91ZC53YWxsZXRjb25uZWN0LmNvbVxyXG5pZiAoIXByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1BST0pFQ1RfSUQpXHJcbiAgdGhyb3cgbmV3IEVycm9yKCdZb3UgbmVlZCB0byBwcm92aWRlIE5FWFRfUFVCTElDX1BST0pFQ1RfSUQgZW52IHZhcmlhYmxlJylcclxuY29uc3QgcHJvamVjdElkID0gcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfUFJPSkVDVF9JRFxyXG5cclxuLy8gMi4gQ29uZmlndXJlIHdhZ21pIGNsaWVudFxyXG5jb25zdCBjaGFpbnMgPSBbY2hhaW4ubWFpbm5ldCwgY2hhaW4ucG9seWdvbiwgY2hhaW4ub3B0aW1pc20sIGNoYWluLmFyYml0cnVtXVxyXG5jb25zdCB7IHByb3ZpZGVyIH0gPSBjb25maWd1cmVDaGFpbnMoY2hhaW5zLCBbd2FsbGV0Q29ubmVjdFByb3ZpZGVyKHsgcHJvamVjdElkIH0pXSlcclxuY29uc3Qgd2FnbWlDbGllbnQgPSBjcmVhdGVDbGllbnQoe1xyXG4gIGF1dG9Db25uZWN0OiB0cnVlLFxyXG4gIGNvbm5lY3RvcnM6IG1vZGFsQ29ubmVjdG9ycyh7IGFwcE5hbWU6ICd3ZWIzTW9kYWwnLCBjaGFpbnMgfSksXHJcbiAgcHJvdmlkZXJcclxufSlcclxuXHJcbi8vIDMuIENvbmZpZ3VyZSBtb2RhbCBldGhlcmV1bSBjbGllbnRcclxuY29uc3QgZXRoZXJldW1DbGllbnQgPSBuZXcgRXRoZXJldW1DbGllbnQod2FnbWlDbGllbnQsIGNoYWlucylcclxuXHJcbi8vIDQuIFdyYXAgeW91ciBhcHAgd2l0aCBXYWdtaVByb3ZpZGVyIGFuZCBhZGQgPFdlYjNNb2RhbCAvPiBjb21wb2VubnRcclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gQXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfTogQXBwUHJvcHMpIHtcclxuXHJcbiAgcmV0dXJuIChcclxuICAgIDw+XHJcbiAgICAgIDxXYWdtaUNvbmZpZyBjbGllbnQ9e3dhZ21pQ2xpZW50fT5cclxuICAgICAgICA8Q29tcG9uZW50IHsuLi5wYWdlUHJvcHN9IC8+XHJcbiAgICAgIDwvV2FnbWlDb25maWc+XHJcblxyXG4gICAgICA8V2ViM01vZGFsXHJcbiAgICAgICAgcHJvamVjdElkPXtwcm9qZWN0SWR9XHJcbiAgICAgICAgdGhlbWU9XCJkYXJrXCJcclxuICAgICAgICBhY2NlbnRDb2xvcj1cImRlZmF1bHRcIlxyXG4gICAgICAgIGV0aGVyZXVtQ2xpZW50PXtldGhlcmV1bUNsaWVudH1cclxuICAgICAgLz5cclxuICAgIDwvPlxyXG4gIClcclxufVxyXG4iXSwibmFtZXMiOlsiRXRoZXJldW1DbGllbnQiLCJtb2RhbENvbm5lY3RvcnMiLCJ3YWxsZXRDb25uZWN0UHJvdmlkZXIiLCJXZWIzTW9kYWwiLCJjaGFpbiIsImNvbmZpZ3VyZUNoYWlucyIsImNyZWF0ZUNsaWVudCIsIldhZ21pQ29uZmlnIiwicHJvY2VzcyIsImVudiIsIk5FWFRfUFVCTElDX1BST0pFQ1RfSUQiLCJFcnJvciIsInByb2plY3RJZCIsImNoYWlucyIsIm1haW5uZXQiLCJwb2x5Z29uIiwib3B0aW1pc20iLCJhcmJpdHJ1bSIsInByb3ZpZGVyIiwid2FnbWlDbGllbnQiLCJhdXRvQ29ubmVjdCIsImNvbm5lY3RvcnMiLCJhcHBOYW1lIiwiZXRoZXJldW1DbGllbnQiLCJBcHAiLCJDb21wb25lbnQiLCJwYWdlUHJvcHMiLCJjbGllbnQiLCJ0aGVtZSIsImFjY2VudENvbG9yIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/_app.tsx\n");
 
 /***/ }),
 
-/***/ 562:
+/***/ "./src/styles.css":
+/*!************************!*\
+  !*** ./src/styles.css ***!
+  \************************/
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 "use strict";
@@ -92,15 +44,21 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ }),
 
-/***/ 585:
+/***/ "@wagmi/core":
+/*!******************************!*\
+  !*** external "@wagmi/core" ***!
+  \******************************/
 /***/ ((module) => {
 
 "use strict";
@@ -108,7 +66,10 @@ module.exports = import("@wagmi/core");;
 
 /***/ }),
 
-/***/ 540:
+/***/ "@wagmi/core/connectors/coinbaseWallet":
+/*!********************************************************!*\
+  !*** external "@wagmi/core/connectors/coinbaseWallet" ***!
+  \********************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -116,7 +77,10 @@ module.exports = import("@wagmi/core/connectors/coinbaseWallet");;
 
 /***/ }),
 
-/***/ 630:
+/***/ "@wagmi/core/connectors/metaMask":
+/*!**************************************************!*\
+  !*** external "@wagmi/core/connectors/metaMask" ***!
+  \**************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -124,7 +88,10 @@ module.exports = import("@wagmi/core/connectors/metaMask");;
 
 /***/ }),
 
-/***/ 848:
+/***/ "@wagmi/core/connectors/walletConnect":
+/*!*******************************************************!*\
+  !*** external "@wagmi/core/connectors/walletConnect" ***!
+  \*******************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -132,7 +99,10 @@ module.exports = import("@wagmi/core/connectors/walletConnect");;
 
 /***/ }),
 
-/***/ 186:
+/***/ "@wagmi/core/providers/jsonRpc":
+/*!************************************************!*\
+  !*** external "@wagmi/core/providers/jsonRpc" ***!
+  \************************************************/
 /***/ ((module) => {
 
 "use strict";
@@ -140,7 +110,10 @@ module.exports = import("@wagmi/core/providers/jsonRpc");;
 
 /***/ }),
 
-/***/ 414:
+/***/ "@web3modal/core":
+/*!**********************************!*\
+  !*** external "@web3modal/core" ***!
+  \**********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -148,7 +121,10 @@ module.exports = import("@web3modal/core");;
 
 /***/ }),
 
-/***/ 127:
+/***/ "@web3modal/ui":
+/*!********************************!*\
+  !*** external "@web3modal/ui" ***!
+  \********************************/
 /***/ ((module) => {
 
 "use strict";
@@ -156,11 +132,36 @@ module.exports = import("@web3modal/ui");;
 
 /***/ }),
 
-/***/ 998:
+/***/ "wagmi":
+/*!************************!*\
+  !*** external "wagmi" ***!
+  \************************/
 /***/ ((module) => {
 
 "use strict";
 module.exports = import("wagmi");;
+
+/***/ }),
+
+/***/ "./node_modules/@web3modal/ethereum/dist/index.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@web3modal/ethereum/dist/index.js ***!
+  \********************************************************/
+/***/ ((__webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"EthereumClient\": () => (/* binding */ B),\n/* harmony export */   \"modalConnectors\": () => (/* binding */ W),\n/* harmony export */   \"walletConnectProvider\": () => (/* binding */ M)\n/* harmony export */ });\n/* harmony import */ var _wagmi_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wagmi/core */ \"@wagmi/core\");\n/* harmony import */ var _wagmi_core_connectors_coinbaseWallet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wagmi/core/connectors/coinbaseWallet */ \"@wagmi/core/connectors/coinbaseWallet\");\n/* harmony import */ var _wagmi_core_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wagmi/core/connectors/metaMask */ \"@wagmi/core/connectors/metaMask\");\n/* harmony import */ var _wagmi_core_connectors_walletConnect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wagmi/core/connectors/walletConnect */ \"@wagmi/core/connectors/walletConnect\");\n/* harmony import */ var _wagmi_core_providers_jsonRpc__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wagmi/core/providers/jsonRpc */ \"@wagmi/core/providers/jsonRpc\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_wagmi_core__WEBPACK_IMPORTED_MODULE_0__, _wagmi_core_connectors_coinbaseWallet__WEBPACK_IMPORTED_MODULE_1__, _wagmi_core_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__, _wagmi_core_connectors_walletConnect__WEBPACK_IMPORTED_MODULE_3__, _wagmi_core_providers_jsonRpc__WEBPACK_IMPORTED_MODULE_4__]);\n([_wagmi_core__WEBPACK_IMPORTED_MODULE_0__, _wagmi_core_connectors_coinbaseWallet__WEBPACK_IMPORTED_MODULE_1__, _wagmi_core_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__, _wagmi_core_connectors_walletConnect__WEBPACK_IMPORTED_MODULE_3__, _wagmi_core_providers_jsonRpc__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\nclass B {\n    constructor(n, e){\n        this.wagmi = {}, this.chains = [], this.disconnect = _wagmi_core__WEBPACK_IMPORTED_MODULE_0__.disconnect, this.getAccount = _wagmi_core__WEBPACK_IMPORTED_MODULE_0__.getAccount, this.watchAccount = _wagmi_core__WEBPACK_IMPORTED_MODULE_0__.watchAccount, this.wagmi = n, this.chains = e;\n    }\n    getDefaultConnectorChainId(n) {\n        return n.chains[0].id;\n    }\n    getConnectorById(n) {\n        const e = this.wagmi.connectors.find((t)=>t.id === n);\n        if (!e) throw new Error(`Missing ${n} connector`);\n        return e;\n    }\n    async getActiveWalletConnectUri() {\n        return (await this.getConnectorById(\"walletConnect\").getProvider()).connector.uri;\n    }\n    async connectWalletConnect(n, e) {\n        const t = this.getConnectorById(\"walletConnect\"), o = e ?? this.getDefaultConnectorChainId(t);\n        async function i() {\n            return new Promise((s)=>{\n                t.once(\"message\", async ({ type: a  })=>{\n                    if (a === \"connecting\") {\n                        const h = await t.getProvider();\n                        n(h.connector.uri), s();\n                    }\n                });\n            });\n        }\n        const [r] = await Promise.all([\n            (0,_wagmi_core__WEBPACK_IMPORTED_MODULE_0__.connect)({\n                connector: t,\n                chainId: o\n            }),\n            i()\n        ]);\n        return r;\n    }\n    async connectCoinbaseMobile(n, e) {\n        const t = this.getConnectorById(\"coinbaseWallet\"), o = e ?? this.getDefaultConnectorChainId(t);\n        async function i() {\n            return new Promise((s)=>{\n                t.once(\"message\", async ({ type: a  })=>{\n                    if (a === \"connecting\") {\n                        const h = await t.getProvider();\n                        n?.(h.qrUrl), s();\n                    }\n                });\n            });\n        }\n        const [r] = await Promise.all([\n            (0,_wagmi_core__WEBPACK_IMPORTED_MODULE_0__.connect)({\n                connector: t,\n                chainId: o\n            }),\n            i()\n        ]);\n        return r;\n    }\n    async connectExtension(n, e) {\n        const t = this.getConnectorById(n), o = e ?? this.getDefaultConnectorChainId(t);\n        return await (0,_wagmi_core__WEBPACK_IMPORTED_MODULE_0__.connect)({\n            connector: t,\n            chainId: o\n        });\n    }\n}\nconst I = \"eip155\";\nfunction M({ projectId: c  }) {\n    return (0,_wagmi_core_providers_jsonRpc__WEBPACK_IMPORTED_MODULE_4__.jsonRpcProvider)({\n        rpc: (n)=>({\n                http: `https://rpc.walletconnect.com/v1/?chainId=${I}:${n.id}&projectId=${c}`\n            })\n    });\n}\nfunction W({ appName: c , chains: n  }) {\n    return [\n        new _wagmi_core_connectors_walletConnect__WEBPACK_IMPORTED_MODULE_3__.WalletConnectConnector({\n            chains: n,\n            options: {\n                qrcode: !1\n            }\n        }),\n        new _wagmi_core__WEBPACK_IMPORTED_MODULE_0__.InjectedConnector({\n            chains: n,\n            options: {\n                shimDisconnect: !0\n            }\n        }),\n        new _wagmi_core_connectors_coinbaseWallet__WEBPACK_IMPORTED_MODULE_1__.CoinbaseWalletConnector({\n            chains: n,\n            options: {\n                appName: c,\n                headlessMode: !0\n            }\n        }),\n        new _wagmi_core_connectors_metaMask__WEBPACK_IMPORTED_MODULE_2__.MetaMaskConnector({\n            chains: n,\n            options: {\n                shimDisconnect: !0,\n                shimChainChangedDisconnect: !1,\n                UNSTABLE_shimOnConnectSelectAccount: !0\n            }\n        })\n    ];\n}\n //# sourceMappingURL=index.js.map\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvQHdlYjNtb2RhbC9ldGhlcmV1bS9kaXN0L2luZGV4LmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQStHO0FBQWdGO0FBQW9FO0FBQThFO0FBQWdFO0FBQUEsTUFBTWtCO0lBQUVDLFlBQVlDLENBQUMsRUFBQ0MsQ0FBQyxDQUFDO1FBQUMsSUFBSSxDQUFDQyxLQUFLLEdBQUMsQ0FBQyxHQUFFLElBQUksQ0FBQ0MsTUFBTSxHQUFDLEVBQUUsRUFBQyxJQUFJLENBQUN2QixVQUFVLEdBQUNDLG1EQUFDQSxFQUFDLElBQUksQ0FBQ0MsVUFBVSxHQUFDQyxtREFBQ0EsRUFBQyxJQUFJLENBQUNDLFlBQVksR0FBQ0MscURBQUNBLEVBQUMsSUFBSSxDQUFDaUIsS0FBSyxHQUFDRixHQUFFLElBQUksQ0FBQ0csTUFBTSxHQUFDRixDQUFDO0lBQUE7SUFBQ0csMkJBQTJCSixDQUFDLEVBQUM7UUFBQyxPQUFPQSxFQUFFRyxNQUFNLENBQUMsRUFBRSxDQUFDRSxFQUFFO0lBQUE7SUFBQ0MsaUJBQWlCTixDQUFDLEVBQUM7UUFBQyxNQUFNQyxJQUFFLElBQUksQ0FBQ0MsS0FBSyxDQUFDSyxVQUFVLENBQUNDLElBQUksQ0FBQ0MsQ0FBQUEsSUFBR0EsRUFBRUosRUFBRSxLQUFHTDtRQUFHLElBQUcsQ0FBQ0MsR0FBRSxNQUFNLElBQUlTLE1BQU0sQ0FBQyxRQUFRLEVBQUVWLEVBQUUsVUFBVSxDQUFDLEVBQUU7UUFBQSxPQUFPQztJQUFDO0lBQUMsTUFBTVUsNEJBQTJCO1FBQUMsT0FBTSxDQUFDLE1BQU0sSUFBSSxDQUFDTCxnQkFBZ0IsQ0FBQyxpQkFBaUJNLFdBQVcsRUFBQyxFQUFHQyxTQUFTLENBQUNDLEdBQUc7SUFBQTtJQUFDLE1BQU1DLHFCQUFxQmYsQ0FBQyxFQUFDQyxDQUFDLEVBQUM7UUFBQyxNQUFNUSxJQUFFLElBQUksQ0FBQ0gsZ0JBQWdCLENBQUMsa0JBQWlCVSxJQUFFZixLQUFHLElBQUksQ0FBQ0csMEJBQTBCLENBQUNLO1FBQUcsZUFBZVEsSUFBRztZQUFDLE9BQU8sSUFBSUMsUUFBUUMsQ0FBQUEsSUFBRztnQkFBQ1YsRUFBRVcsSUFBSSxDQUFDLFdBQVUsT0FBTSxFQUFDQyxNQUFLQyxFQUFDLEVBQUMsR0FBRztvQkFBQyxJQUFHQSxNQUFJLGNBQWE7d0JBQUMsTUFBTUMsSUFBRSxNQUFNZCxFQUFFRyxXQUFXO3dCQUFHWixFQUFFdUIsRUFBRVYsU0FBUyxDQUFDQyxHQUFHLEdBQUVLLEdBQUc7b0JBQUEsQ0FBQztnQkFBQTtZQUFFO1FBQUU7UUFBQyxNQUFLLENBQUNLLEVBQUUsR0FBQyxNQUFNTixRQUFRTyxHQUFHLENBQUM7WUFBQ3RDLG9EQUFDQSxDQUFDO2dCQUFDMEIsV0FBVUo7Z0JBQUVpQixTQUFRVjtZQUFDO1lBQUdDO1NBQUk7UUFBRSxPQUFPTztJQUFDO0lBQUMsTUFBTUcsc0JBQXNCM0IsQ0FBQyxFQUFDQyxDQUFDLEVBQUM7UUFBQyxNQUFNUSxJQUFFLElBQUksQ0FBQ0gsZ0JBQWdCLENBQUMsbUJBQWtCVSxJQUFFZixLQUFHLElBQUksQ0FBQ0csMEJBQTBCLENBQUNLO1FBQUcsZUFBZVEsSUFBRztZQUFDLE9BQU8sSUFBSUMsUUFBUUMsQ0FBQUEsSUFBRztnQkFBQ1YsRUFBRVcsSUFBSSxDQUFDLFdBQVUsT0FBTSxFQUFDQyxNQUFLQyxFQUFDLEVBQUMsR0FBRztvQkFBQyxJQUFHQSxNQUFJLGNBQWE7d0JBQUMsTUFBTUMsSUFBRSxNQUFNZCxFQUFFRyxXQUFXO3dCQUFHWixJQUFJdUIsRUFBRUssS0FBSyxHQUFFVCxHQUFHO29CQUFBLENBQUM7Z0JBQUE7WUFBRTtRQUFFO1FBQUMsTUFBSyxDQUFDSyxFQUFFLEdBQUMsTUFBTU4sUUFBUU8sR0FBRyxDQUFDO1lBQUN0QyxvREFBQ0EsQ0FBQztnQkFBQzBCLFdBQVVKO2dCQUFFaUIsU0FBUVY7WUFBQztZQUFHQztTQUFJO1FBQUUsT0FBT087SUFBQztJQUFDLE1BQU1LLGlCQUFpQjdCLENBQUMsRUFBQ0MsQ0FBQyxFQUFDO1FBQUMsTUFBTVEsSUFBRSxJQUFJLENBQUNILGdCQUFnQixDQUFDTixJQUFHZ0IsSUFBRWYsS0FBRyxJQUFJLENBQUNHLDBCQUEwQixDQUFDSztRQUFHLE9BQU8sTUFBTXRCLG9EQUFDQSxDQUFDO1lBQUMwQixXQUFVSjtZQUFFaUIsU0FBUVY7UUFBQztJQUFFO0FBQUM7QUFBQyxNQUFNYyxJQUFFO0FBQVMsU0FBU0MsRUFBRSxFQUFDQyxXQUFVQyxFQUFDLEVBQUMsRUFBQztJQUFDLE9BQU9wQyw4RUFBQ0EsQ0FBQztRQUFDcUMsS0FBSWxDLENBQUFBLElBQUk7Z0JBQUNtQyxNQUFLLENBQUMsMENBQTBDLEVBQUVMLEVBQUUsQ0FBQyxFQUFFOUIsRUFBRUssRUFBRSxDQUFDLFdBQVcsRUFBRTRCLEVBQUUsQ0FBQztZQUFBO0lBQUU7QUFBRTtBQUFDLFNBQVNHLEVBQUUsRUFBQ0MsU0FBUUosRUFBQyxFQUFDOUIsUUFBT0gsRUFBQyxFQUFDLEVBQUM7SUFBQyxPQUFNO1FBQUMsSUFBSUwsd0ZBQUNBLENBQUM7WUFBQ1EsUUFBT0g7WUFBRXNDLFNBQVE7Z0JBQUNDLFFBQU8sQ0FBQztZQUFDO1FBQUM7UUFBRyxJQUFJbEQsMERBQUNBLENBQUM7WUFBQ2MsUUFBT0g7WUFBRXNDLFNBQVE7Z0JBQUNFLGdCQUFlLENBQUM7WUFBQztRQUFDO1FBQUcsSUFBSWpELDBGQUFDQSxDQUFDO1lBQUNZLFFBQU9IO1lBQUVzQyxTQUFRO2dCQUFDRCxTQUFRSjtnQkFBRVEsY0FBYSxDQUFDO1lBQUM7UUFBQztRQUFHLElBQUloRCw4RUFBQ0EsQ0FBQztZQUFDVSxRQUFPSDtZQUFFc0MsU0FBUTtnQkFBQ0UsZ0JBQWUsQ0FBQztnQkFBRUUsNEJBQTJCLENBQUM7Z0JBQUVDLHFDQUFvQyxDQUFDO1lBQUM7UUFBQztLQUFHO0FBQUE7QUFBNkUsQ0FDM25FLGlDQUFpQyIsInNvdXJjZXMiOlsid2VicGFjazovL3JlYWN0LWV4YW1wbGUvLi9ub2RlX21vZHVsZXMvQHdlYjNtb2RhbC9ldGhlcmV1bS9kaXN0L2luZGV4LmpzPzMxZWEiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0e2Rpc2Nvbm5lY3QgYXMgZCxnZXRBY2NvdW50IGFzIHUsd2F0Y2hBY2NvdW50IGFzIEMsY29ubmVjdCBhcyBsLEluamVjdGVkQ29ubmVjdG9yIGFzIG19ZnJvbVwiQHdhZ21pL2NvcmVcIjtpbXBvcnR7Q29pbmJhc2VXYWxsZXRDb25uZWN0b3IgYXMgcH1mcm9tXCJAd2FnbWkvY29yZS9jb25uZWN0b3JzL2NvaW5iYXNlV2FsbGV0XCI7aW1wb3J0e01ldGFNYXNrQ29ubmVjdG9yIGFzIGd9ZnJvbVwiQHdhZ21pL2NvcmUvY29ubmVjdG9ycy9tZXRhTWFza1wiO2ltcG9ydHtXYWxsZXRDb25uZWN0Q29ubmVjdG9yIGFzIHd9ZnJvbVwiQHdhZ21pL2NvcmUvY29ubmVjdG9ycy93YWxsZXRDb25uZWN0XCI7aW1wb3J0e2pzb25ScGNQcm92aWRlciBhcyBmfWZyb21cIkB3YWdtaS9jb3JlL3Byb3ZpZGVycy9qc29uUnBjXCI7Y2xhc3MgQntjb25zdHJ1Y3RvcihuLGUpe3RoaXMud2FnbWk9e30sdGhpcy5jaGFpbnM9W10sdGhpcy5kaXNjb25uZWN0PWQsdGhpcy5nZXRBY2NvdW50PXUsdGhpcy53YXRjaEFjY291bnQ9Qyx0aGlzLndhZ21pPW4sdGhpcy5jaGFpbnM9ZX1nZXREZWZhdWx0Q29ubmVjdG9yQ2hhaW5JZChuKXtyZXR1cm4gbi5jaGFpbnNbMF0uaWR9Z2V0Q29ubmVjdG9yQnlJZChuKXtjb25zdCBlPXRoaXMud2FnbWkuY29ubmVjdG9ycy5maW5kKHQ9PnQuaWQ9PT1uKTtpZighZSl0aHJvdyBuZXcgRXJyb3IoYE1pc3NpbmcgJHtufSBjb25uZWN0b3JgKTtyZXR1cm4gZX1hc3luYyBnZXRBY3RpdmVXYWxsZXRDb25uZWN0VXJpKCl7cmV0dXJuKGF3YWl0IHRoaXMuZ2V0Q29ubmVjdG9yQnlJZChcIndhbGxldENvbm5lY3RcIikuZ2V0UHJvdmlkZXIoKSkuY29ubmVjdG9yLnVyaX1hc3luYyBjb25uZWN0V2FsbGV0Q29ubmVjdChuLGUpe2NvbnN0IHQ9dGhpcy5nZXRDb25uZWN0b3JCeUlkKFwid2FsbGV0Q29ubmVjdFwiKSxvPWU/P3RoaXMuZ2V0RGVmYXVsdENvbm5lY3RvckNoYWluSWQodCk7YXN5bmMgZnVuY3Rpb24gaSgpe3JldHVybiBuZXcgUHJvbWlzZShzPT57dC5vbmNlKFwibWVzc2FnZVwiLGFzeW5jKHt0eXBlOmF9KT0+e2lmKGE9PT1cImNvbm5lY3RpbmdcIil7Y29uc3QgaD1hd2FpdCB0LmdldFByb3ZpZGVyKCk7bihoLmNvbm5lY3Rvci51cmkpLHMoKX19KX0pfWNvbnN0W3JdPWF3YWl0IFByb21pc2UuYWxsKFtsKHtjb25uZWN0b3I6dCxjaGFpbklkOm99KSxpKCldKTtyZXR1cm4gcn1hc3luYyBjb25uZWN0Q29pbmJhc2VNb2JpbGUobixlKXtjb25zdCB0PXRoaXMuZ2V0Q29ubmVjdG9yQnlJZChcImNvaW5iYXNlV2FsbGV0XCIpLG89ZT8/dGhpcy5nZXREZWZhdWx0Q29ubmVjdG9yQ2hhaW5JZCh0KTthc3luYyBmdW5jdGlvbiBpKCl7cmV0dXJuIG5ldyBQcm9taXNlKHM9Pnt0Lm9uY2UoXCJtZXNzYWdlXCIsYXN5bmMoe3R5cGU6YX0pPT57aWYoYT09PVwiY29ubmVjdGluZ1wiKXtjb25zdCBoPWF3YWl0IHQuZ2V0UHJvdmlkZXIoKTtuPy4oaC5xclVybCkscygpfX0pfSl9Y29uc3Rbcl09YXdhaXQgUHJvbWlzZS5hbGwoW2woe2Nvbm5lY3Rvcjp0LGNoYWluSWQ6b30pLGkoKV0pO3JldHVybiByfWFzeW5jIGNvbm5lY3RFeHRlbnNpb24obixlKXtjb25zdCB0PXRoaXMuZ2V0Q29ubmVjdG9yQnlJZChuKSxvPWU/P3RoaXMuZ2V0RGVmYXVsdENvbm5lY3RvckNoYWluSWQodCk7cmV0dXJuIGF3YWl0IGwoe2Nvbm5lY3Rvcjp0LGNoYWluSWQ6b30pfX1jb25zdCBJPVwiZWlwMTU1XCI7ZnVuY3Rpb24gTSh7cHJvamVjdElkOmN9KXtyZXR1cm4gZih7cnBjOm49Pih7aHR0cDpgaHR0cHM6Ly9ycGMud2FsbGV0Y29ubmVjdC5jb20vdjEvP2NoYWluSWQ9JHtJfToke24uaWR9JnByb2plY3RJZD0ke2N9YH0pfSl9ZnVuY3Rpb24gVyh7YXBwTmFtZTpjLGNoYWluczpufSl7cmV0dXJuW25ldyB3KHtjaGFpbnM6bixvcHRpb25zOntxcmNvZGU6ITF9fSksbmV3IG0oe2NoYWluczpuLG9wdGlvbnM6e3NoaW1EaXNjb25uZWN0OiEwfX0pLG5ldyBwKHtjaGFpbnM6bixvcHRpb25zOnthcHBOYW1lOmMsaGVhZGxlc3NNb2RlOiEwfX0pLG5ldyBnKHtjaGFpbnM6bixvcHRpb25zOntzaGltRGlzY29ubmVjdDohMCxzaGltQ2hhaW5DaGFuZ2VkRGlzY29ubmVjdDohMSxVTlNUQUJMRV9zaGltT25Db25uZWN0U2VsZWN0QWNjb3VudDohMH19KV19ZXhwb3J0e0IgYXMgRXRoZXJldW1DbGllbnQsVyBhcyBtb2RhbENvbm5lY3RvcnMsTSBhcyB3YWxsZXRDb25uZWN0UHJvdmlkZXJ9O1xuLy8jIHNvdXJjZU1hcHBpbmdVUkw9aW5kZXguanMubWFwXG4iXSwibmFtZXMiOlsiZGlzY29ubmVjdCIsImQiLCJnZXRBY2NvdW50IiwidSIsIndhdGNoQWNjb3VudCIsIkMiLCJjb25uZWN0IiwibCIsIkluamVjdGVkQ29ubmVjdG9yIiwibSIsIkNvaW5iYXNlV2FsbGV0Q29ubmVjdG9yIiwicCIsIk1ldGFNYXNrQ29ubmVjdG9yIiwiZyIsIldhbGxldENvbm5lY3RDb25uZWN0b3IiLCJ3IiwianNvblJwY1Byb3ZpZGVyIiwiZiIsIkIiLCJjb25zdHJ1Y3RvciIsIm4iLCJlIiwid2FnbWkiLCJjaGFpbnMiLCJnZXREZWZhdWx0Q29ubmVjdG9yQ2hhaW5JZCIsImlkIiwiZ2V0Q29ubmVjdG9yQnlJZCIsImNvbm5lY3RvcnMiLCJmaW5kIiwidCIsIkVycm9yIiwiZ2V0QWN0aXZlV2FsbGV0Q29ubmVjdFVyaSIsImdldFByb3ZpZGVyIiwiY29ubmVjdG9yIiwidXJpIiwiY29ubmVjdFdhbGxldENvbm5lY3QiLCJvIiwiaSIsIlByb21pc2UiLCJzIiwib25jZSIsInR5cGUiLCJhIiwiaCIsInIiLCJhbGwiLCJjaGFpbklkIiwiY29ubmVjdENvaW5iYXNlTW9iaWxlIiwicXJVcmwiLCJjb25uZWN0RXh0ZW5zaW9uIiwiSSIsIk0iLCJwcm9qZWN0SWQiLCJjIiwicnBjIiwiaHR0cCIsIlciLCJhcHBOYW1lIiwib3B0aW9ucyIsInFyY29kZSIsInNoaW1EaXNjb25uZWN0IiwiaGVhZGxlc3NNb2RlIiwic2hpbUNoYWluQ2hhbmdlZERpc2Nvbm5lY3QiLCJVTlNUQUJMRV9zaGltT25Db25uZWN0U2VsZWN0QWNjb3VudCIsIkV0aGVyZXVtQ2xpZW50IiwibW9kYWxDb25uZWN0b3JzIiwid2FsbGV0Q29ubmVjdFByb3ZpZGVyIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./node_modules/@web3modal/ethereum/dist/index.js\n");
+
+/***/ }),
+
+/***/ "./node_modules/@web3modal/react/dist/index.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@web3modal/react/dist/index.js ***!
+  \*****************************************************/
+/***/ ((__webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"AccountButton\": () => (/* binding */ V),\n/* harmony export */   \"ConnectButton\": () => (/* binding */ X),\n/* harmony export */   \"Web3Button\": () => (/* binding */ Y),\n/* harmony export */   \"Web3Modal\": () => (/* binding */ Z),\n/* harmony export */   \"useWeb3Modal\": () => (/* binding */ _)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var _web3modal_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @web3modal/core */ \"@web3modal/core\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_web3modal_core__WEBPACK_IMPORTED_MODULE_1__]);\n_web3modal_core__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\nvar E = Object.defineProperty, c = Object.getOwnPropertySymbols, d = Object.prototype.hasOwnProperty, C = Object.prototype.propertyIsEnumerable, p = (t, r, e)=>r in t ? E(t, r, {\n        enumerable: !0,\n        configurable: !0,\n        writable: !0,\n        value: e\n    }) : t[r] = e, h = (t, r)=>{\n    for(var e in r || (r = {}))d.call(r, e) && p(t, e, r[e]);\n    if (c) for (var e of c(r))C.call(r, e) && p(t, e, r[e]);\n    return t;\n};\nfunction V(t) {\n    return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"w3m-account-button\", h({}, t));\n}\nvar S = Object.defineProperty, u = Object.getOwnPropertySymbols, I = Object.prototype.hasOwnProperty, M = Object.prototype.propertyIsEnumerable, b = (t, r, e)=>r in t ? S(t, r, {\n        enumerable: !0,\n        configurable: !0,\n        writable: !0,\n        value: e\n    }) : t[r] = e, x = (t, r)=>{\n    for(var e in r || (r = {}))I.call(r, e) && b(t, e, r[e]);\n    if (u) for (var e of u(r))M.call(r, e) && b(t, e, r[e]);\n    return t;\n};\nfunction X(t) {\n    return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"w3m-connect-button\", x({}, t));\n}\nvar B = Object.defineProperty, i = Object.getOwnPropertySymbols, W = Object.prototype.hasOwnProperty, k = Object.prototype.propertyIsEnumerable, f = (t, r, e)=>r in t ? B(t, r, {\n        enumerable: !0,\n        configurable: !0,\n        writable: !0,\n        value: e\n    }) : t[r] = e, A = (t, r)=>{\n    for(var e in r || (r = {}))W.call(r, e) && f(t, e, r[e]);\n    if (i) for (var e of i(r))k.call(r, e) && f(t, e, r[e]);\n    return t;\n};\nfunction Y(t) {\n    return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"w3m-core-button\", A({}, t));\n}\nvar q = Object.defineProperty, v = Object.getOwnPropertySymbols, z = Object.prototype.hasOwnProperty, D = Object.prototype.propertyIsEnumerable, y = (t, r, e)=>r in t ? q(t, r, {\n        enumerable: !0,\n        configurable: !0,\n        writable: !0,\n        value: e\n    }) : t[r] = e, F = (t, r)=>{\n    for(var e in r || (r = {}))z.call(r, e) && y(t, e, r[e]);\n    if (v) for (var e of v(r))D.call(r, e) && y(t, e, r[e]);\n    return t;\n};\nfunction G(t) {\n    return /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(\"w3m-modal\", F({}, t));\n}\nvar O = Object.getOwnPropertySymbols, H = Object.prototype.hasOwnProperty, J = Object.prototype.propertyIsEnumerable, K = (t, r)=>{\n    var e = {};\n    for(var o in t)H.call(t, o) && r.indexOf(o) < 0 && (e[o] = t[o]);\n    if (t != null && O) for (var o of O(t))r.indexOf(o) < 0 && J.call(t, o) && (e[o] = t[o]);\n    return e;\n};\nfunction Z(t) {\n    var r = t, { ethereumClient: e  } = r, o = K(r, [\n        \"ethereumClient\"\n    ]);\n    const l = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(async ()=>{\n        _web3modal_core__WEBPACK_IMPORTED_MODULE_1__.ConfigCtrl.setConfig(o), e && _web3modal_core__WEBPACK_IMPORTED_MODULE_1__.ClientCtrl.setEthereumClient(e), await Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! @web3modal/ui */ \"@web3modal/ui\"));\n    }, [\n        e,\n        o\n    ]);\n    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{\n        l();\n    }, [\n        l\n    ]), /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_0__.createElement(G, null);\n}\nvar L = Object.defineProperty, s = Object.getOwnPropertySymbols, N = Object.prototype.hasOwnProperty, Q = Object.prototype.propertyIsEnumerable, m = (t, r, e)=>r in t ? L(t, r, {\n        enumerable: !0,\n        configurable: !0,\n        writable: !0,\n        value: e\n    }) : t[r] = e, R = (t, r)=>{\n    for(var e in r || (r = {}))N.call(r, e) && m(t, e, r[e]);\n    if (s) for (var e of s(r))Q.call(r, e) && m(t, e, r[e]);\n    return t;\n};\nfunction _() {\n    const [t, r] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(_web3modal_core__WEBPACK_IMPORTED_MODULE_1__.ModalCtrl.state);\n    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{\n        const e = _web3modal_core__WEBPACK_IMPORTED_MODULE_1__.ModalCtrl.subscribe((o)=>r(R({}, o)));\n        return ()=>{\n            e();\n        };\n    }, []), {\n        isOpen: t.open,\n        open: _web3modal_core__WEBPACK_IMPORTED_MODULE_1__.ModalCtrl.open,\n        close: _web3modal_core__WEBPACK_IMPORTED_MODULE_1__.ModalCtrl.close\n    };\n}\n //# sourceMappingURL=index.js.map\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvQHdlYjNtb2RhbC9yZWFjdC9kaXN0L2luZGV4LmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7QUFBb0U7QUFBNEU7QUFBQSxJQUFJYSxJQUFFQyxPQUFPQyxjQUFjLEVBQUNDLElBQUVGLE9BQU9HLHFCQUFxQixFQUFDQyxJQUFFSixPQUFPSyxTQUFTLENBQUNDLGNBQWMsRUFBQ0MsSUFBRVAsT0FBT0ssU0FBUyxDQUFDRyxvQkFBb0IsRUFBQ0MsSUFBRSxDQUFDQyxHQUFFQyxHQUFFQyxJQUFJRCxLQUFLRCxJQUFFWCxFQUFFVyxHQUFFQyxHQUFFO1FBQUNFLFlBQVcsQ0FBQztRQUFFQyxjQUFhLENBQUM7UUFBRUMsVUFBUyxDQUFDO1FBQUVDLE9BQU1KO0lBQUMsS0FBR0YsQ0FBQyxDQUFDQyxFQUFFLEdBQUNDLENBQUMsRUFBQ0ssSUFBRSxDQUFDUCxHQUFFQyxJQUFJO0lBQUMsSUFBSSxJQUFJQyxLQUFLRCxLQUFJQSxDQUFBQSxJQUFFLENBQUMsR0FBR1AsRUFBRWMsSUFBSSxDQUFDUCxHQUFFQyxNQUFJSCxFQUFFQyxHQUFFRSxHQUFFRCxDQUFDLENBQUNDLEVBQUU7SUFBRSxJQUFHVixHQUFFLEtBQUksSUFBSVUsS0FBS1YsRUFBRVMsR0FBR0osRUFBRVcsSUFBSSxDQUFDUCxHQUFFQyxNQUFJSCxFQUFFQyxHQUFFRSxHQUFFRCxDQUFDLENBQUNDLEVBQUU7SUFBRSxPQUFPRjtBQUFDO0FBQUUsU0FBU1MsRUFBRVQsQ0FBQyxFQUFDO0lBQUMscUJBQU94QixnREFBZSxDQUFDLHNCQUFxQitCLEVBQUUsQ0FBQyxHQUFFUDtBQUFHO0FBQUMsSUFBSVcsSUFBRXJCLE9BQU9DLGNBQWMsRUFBQ3FCLElBQUV0QixPQUFPRyxxQkFBcUIsRUFBQ29CLElBQUV2QixPQUFPSyxTQUFTLENBQUNDLGNBQWMsRUFBQ2tCLElBQUV4QixPQUFPSyxTQUFTLENBQUNHLG9CQUFvQixFQUFDaUIsSUFBRSxDQUFDZixHQUFFQyxHQUFFQyxJ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QU9LLFNBQVMsQ0FBQ0MsY0FBYyxFQUFDa0QsSUFBRXhELE9BQU9LLFNBQVMsQ0FBQ0csb0JBQW9CLEVBQUNpRCxJQUFFLENBQUMvQyxHQUFFQyxHQUFFQyxJQUFJRCxLQUFLRCxJQUFFMkMsRUFBRTNDLEdBQUVDLEdBQUU7UUFBQ0UsWUFBVyxDQUFDO1FBQUVDLGNBQWEsQ0FBQztRQUFFQyxVQUFTLENBQUM7UUFBRUMsT0FBTUo7SUFBQyxLQUFHRixDQUFDLENBQUNDLEVBQUUsR0FBQ0MsQ0FBQyxFQUFDOEMsSUFBRSxDQUFDaEQsR0FBRUMsSUFBSTtJQUFDLElBQUksSUFBSUMsS0FBS0QsS0FBSUEsQ0FBQUEsSUFBRSxDQUFDLEdBQUc0QyxFQUFFckMsSUFBSSxDQUFDUCxHQUFFQyxNQUFJNkMsRUFBRS9DLEdBQUVFLEdBQUVELENBQUMsQ0FBQ0MsRUFBRTtJQUFFLElBQUcwQyxHQUFFLEtBQUksSUFBSTFDLEtBQUswQyxFQUFFM0MsR0FBRzZDLEVBQUV0QyxJQUFJLENBQUNQLEdBQUVDLE1BQUk2QyxFQUFFL0MsR0FBRUUsR0FBRUQsQ0FBQyxDQUFDQyxFQUFFO0lBQUUsT0FBT0Y7QUFBQztBQUFFLFNBQVNpRCxJQUFHO0lBQUMsTUFBSyxDQUFDakQsR0FBRUMsRUFBRSxHQUFDbkIsK0NBQUNBLENBQUNNLDREQUFPO0lBQUUsT0FBT1IsZ0RBQUNBLENBQUMsSUFBSTtRQUFDLE1BQU1zQixJQUFFZCxnRUFBVyxDQUFDZ0QsQ0FBQUEsSUFBR25DLEVBQUUrQyxFQUFFLENBQUMsR0FBRVo7UUFBSyxPQUFNLElBQUk7WUFBQ2xDO1FBQUc7SUFBQyxHQUFFLEVBQUUsR0FBRTtRQUFDa0QsUUFBT3BELEVBQUVxRCxJQUFJO1FBQUNBLE1BQUtqRSwyREFBTTtRQUFDa0UsT0FBTWxFLDREQUFPO0lBQUEsQ0FBQztBQUFBO0FBQWdHLENBQ3R1RixpQ0FBaUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZWFjdC1leGFtcGxlLy4vbm9kZV9tb2R1bGVzL0B3ZWIzbW9kYWwvcmVhY3QvZGlzdC9pbmRleC5qcz80ZmFjIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBhLHt1c2VDYWxsYmFjayBhcyB3LHVzZUVmZmVjdCBhcyBqLHVzZVN0YXRlIGFzICR9ZnJvbVwicmVhY3RcIjtpbXBvcnR7Q29uZmlnQ3RybCBhcyBQLENsaWVudEN0cmwgYXMgZyxNb2RhbEN0cmwgYXMgbn1mcm9tXCJAd2ViM21vZGFsL2NvcmVcIjt2YXIgRT1PYmplY3QuZGVmaW5lUHJvcGVydHksYz1PYmplY3QuZ2V0T3duUHJvcGVydHlTeW1ib2xzLGQ9T2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eSxDPU9iamVjdC5wcm90b3R5cGUucHJvcGVydHlJc0VudW1lcmFibGUscD0odCxyLGUpPT5yIGluIHQ/RSh0LHIse2VudW1lcmFibGU6ITAsY29uZmlndXJhYmxlOiEwLHdyaXRhYmxlOiEwLHZhbHVlOmV9KTp0W3JdPWUsaD0odCxyKT0+e2Zvcih2YXIgZSBpbiByfHwocj17fSkpZC5jYWxsKHIsZSkmJnAodCxlLHJbZV0pO2lmKGMpZm9yKHZhciBlIG9mIGMocikpQy5jYWxsKHIsZSkmJnAodCxlLHJbZV0pO3JldHVybiB0fTtmdW5jdGlvbiBWKHQpe3JldHVybiBhLmNyZWF0ZUVsZW1lbnQoXCJ3M20tYWNjb3VudC1idXR0b25cIixoKHt9LHQpKX12YXIgUz1PYmplY3QuZGVmaW5lUHJvcGVydHksdT1PYmplY3QuZ2V0T3duUHJvcGVydHlTeW1ib2xzLEk9T2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eSxNPU9iamVjdC5wcm90b3R5cGUucHJvcGVydHlJc0VudW1lcmFibGUsYj0odCxyLGUpPT5yIGluIHQ/Uyh0LHIse2VudW1lcmFibGU6ITAsY29uZmlndXJhYmxlOiEwLHdyaXRhYmxlOiEwLHZhbHVlOmV9KTp0W3JdPWUseD0odCxyKT0+e2Zvcih2YXIgZSBpbiByfHwocj17fSkpSS5jYWxsKHIsZSkmJmIodCxlLHJbZV0pO2lmKHUpZm9yKHZhciBlIG9mIHUocikpTS5jYWxsKHIsZSkmJmIodCxlLHJbZV0pO3JldHVybiB0fTtmdW5jdGlvbiBYKHQpe3JldHVybiBhLmNyZWF0ZUVsZW1lbnQoXCJ3M20tY29ubmVjdC1idXR0b25cIix4KHt9LHQpKX12YXIgQj1PYmplY3QuZGVmaW5lUHJvcGVydHksaT1PYmplY3QuZ2V0T3duUHJvcGVydHlTeW1ib2xzLFc9T2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eSxrPU9iamVjdC5wcm90b3R5cGUucHJvcGVydHlJc0VudW1lcmFibGUsZj0odCxyLGUpPT5yIGluIHQ/Qih0LHIse2VudW1lcmFibGU6ITAsY29uZmlndXJhYmxlOiEwLHdyaXRhYmxlOiEwLHZhbHVlOmV9KTp0W3JdPWUsQT0odCxyKT0+e2Zvcih2YXIgZSBpbiByfHwocj17fSkpVy5jYWxsKHIsZSkmJmYodCxlLHJbZV0pO2lmKGkpZm9yKHZhciBlIG9mIGkocikpay5jYWxsKHIsZSkmJmYodCxlLHJbZV0pO3JldHVybiB0fTtmdW5jdGlvbiBZKHQpe3JldHVybiBhLmNyZWF0ZUVsZW1lbnQoXCJ3M20tY29yZS1idXR0b25cIixBKHt9LHQpKX12YXIgcT1PYmplY3QuZGVmaW5lUHJvcGVydHksdj1PYmplY3QuZ2V0T3duUHJvcGVydHlTeW1ib2xzLHo9T2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eSxEPU9iamVjdC5wcm90b3R5cGUucHJvcGVydHlJc0VudW1lcmFibGUseT0odCxyLGUpPT5yIGluIHQ/cSh0LHIse2VudW1lcmFibGU6ITAsY29uZmlndXJhYmxlOiEwLHdyaXRhYmxlOiEwLHZhbHVlOmV9KTp0W3JdPWUsRj0odCxyKT0+e2Zvcih2YXIgZSBpbiByfHwocj17fSkpei5jYWxsKHIsZSkmJnkodCxlLHJbZV0pO2lmKHYpZm9yKHZhciBlIG9mIHYocikpRC5jYWxsKHIsZSkmJnkodCxlLHJbZV0pO3JldHVybiB0fTtmdW5jdGlvbiBHKHQpe3JldHVybiBhLmNyZWF0ZUVsZW1lbnQoXCJ3M20tbW9kYWxcIixGKHt9LHQpKX12YXIgTz1PYmplY3QuZ2V0T3duUHJvcGVydHlTeW1ib2xzLEg9T2JqZWN0LnByb3RvdHlwZS5oYXNPd25Qcm9wZXJ0eSxKPU9iamVjdC5wcm90b3R5cGUucHJvcGVydHlJc0VudW1lcmFibGUsSz0odCxyKT0+e3ZhciBlPXt9O2Zvcih2YXIgbyBpbiB0KUguY2FsbCh0LG8pJiZyLmluZGV4T2Yobyk8MCYmKGVbb109dFtvXSk7aWYodCE9bnVsbCYmTylmb3IodmFyIG8gb2YgTyh0KSlyLmluZGV4T2Yobyk8MCYmSi5jYWxsKHQsbykmJihlW29dPXRbb10pO3JldHVybiBlfTtmdW5jdGlvbiBaKHQpe3ZhciByPXQse2V0aGVyZXVtQ2xpZW50OmV9PXIsbz1LKHIsW1wiZXRoZXJldW1DbGllbnRcIl0pO2NvbnN0IGw9dyhhc3luYygpPT57UC5zZXRDb25maWcobyksZSYmZy5zZXRFdGhlcmV1bUNsaWVudChlKSxhd2FpdCBpbXBvcnQoXCJAd2ViM21vZGFsL3VpXCIpfSxbZSxvXSk7cmV0dXJuIGooKCk9PntsKCl9LFtsXSksYS5jcmVhdGVFbGVtZW50KEcsbnVsbCl9dmFyIEw9T2JqZWN0LmRlZmluZVByb3BlcnR5LHM9T2JqZWN0LmdldE93blByb3BlcnR5U3ltYm9scyxOPU9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHksUT1PYmplY3QucHJvdG90eXBlLnByb3BlcnR5SXNFbnVtZXJhYmxlLG09KHQscixlKT0+ciBpbiB0P0wodCxyLHtlbnVtZXJhYmxlOiEwLGNvbmZpZ3VyYWJsZTohMCx3cml0YWJsZTohMCx2YWx1ZTplfSk6dFtyXT1lLFI9KHQscik9Pntmb3IodmFyIGUgaW4gcnx8KHI9e30pKU4uY2FsbChyLGUpJiZtKHQsZSxyW2VdKTtpZihzKWZvcih2YXIgZSBvZiBzKHIpKVEuY2FsbChyLGUpJiZtKHQsZSxyW2VdKTtyZXR1cm4gdH07ZnVuY3Rpb24gXygpe2NvbnN0W3Qscl09JChuLnN0YXRlKTtyZXR1cm4gaigoKT0+e2NvbnN0IGU9bi5zdWJzY3JpYmUobz0+cihSKHt9LG8pKSk7cmV0dXJuKCk9PntlKCl9fSxbXSkse2lzT3Blbjp0Lm9wZW4sb3BlbjpuLm9wZW4sY2xvc2U6bi5jbG9zZX19ZXhwb3J0e1YgYXMgQWNjb3VudEJ1dHRvbixYIGFzIENvbm5lY3RCdXR0b24sWSBhcyBXZWIzQnV0dG9uLFogYXMgV2ViM01vZGFsLF8gYXMgdXNlV2ViM01vZGFsfTtcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPWluZGV4LmpzLm1hcFxuIl0sIm5hbWVzIjpbImEiLCJ1c2VDYWxsYmFjayIsInciLCJ1c2VFZmZlY3QiLCJqIiwidXNlU3RhdGUiLCIkIiwiQ29uZmlnQ3RybCIsIlAiLCJDbGllbnRDdHJsIiwiZyIsIk1vZGFsQ3RybCIsIm4iLCJFIiwiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJjIiwiZ2V0T3duUHJvcGVydHlTeW1ib2xzIiwiZCIsInByb3RvdHlwZSIsImhhc093blByb3BlcnR5IiwiQyIsInByb3BlcnR5SXNFbnVtZXJhYmxlIiwicCIsInQiLCJyIiwiZSIsImVudW1lcmFibGUiLCJjb25maWd1cmFibGUiLCJ3cml0YWJsZSIsInZhbHVlIiwiaCIsImNhbGwiLCJWIiwiY3JlYXRlRWxlbWVudCIsIlMiLCJ1IiwiSSIsIk0iLCJiIiwieCIsIlgiLCJCIiwiaSIsIlciLCJrIiwiZiIsIkEiLCJZIiwicSIsInYiLCJ6IiwiRCIsInkiLCJGIiwiRyIsIk8iLCJIIiwiSiIsIksiLCJvIiwiaW5kZXhPZiIsIloiLCJldGhlcmV1bUNsaWVudCIsImwiLCJzZXRDb25maWciLCJzZXRFdGhlcmV1bUNsaWVudCIsIkwiLCJzIiwiTiIsIlEiLCJtIiwiUiIsIl8iLCJzdGF0ZSIsInN1YnNjcmliZSIsImlzT3BlbiIsIm9wZW4iLCJjbG9zZSIsIkFjY291bnRCdXR0b24iLCJDb25uZWN0QnV0dG9uIiwiV2ViM0J1dHRvbiIsIldlYjNNb2RhbCIsInVzZVdlYjNNb2RhbCJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/@web3modal/react/dist/index.js\n");
 
 /***/ })
 
@@ -171,7 +172,7 @@ module.exports = import("wagmi");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [544,721], () => (__webpack_exec__(505)));
+var __webpack_exports__ = (__webpack_exec__("./src/pages/_app.tsx"));
 module.exports = __webpack_exports__;
 
 })();
