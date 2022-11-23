@@ -9,6 +9,7 @@ const instance = axios.create({
       'Content-Type': 'application/json',
     }
   })
+  instance.interceptors.request.use()
 
   export const post = (url:any, params = {}) => {
 
@@ -18,7 +19,7 @@ const instance = axios.create({
       data: params,
     })
   }
-export async  function sign(sign:  string){
-    return await post('/ticket', {sign})
+export async  function sign(sign:  {}){
+    return await post('/ticket', sign)
     // return await fetch('/ticket')
 }
