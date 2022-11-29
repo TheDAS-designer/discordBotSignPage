@@ -8,6 +8,8 @@ import '../styles.css'
 if (!process.env.NEXT_PUBLIC_PROJECT_ID)
   throw new Error('You need to provide NEXT_PUBLIC_PROJECT_ID env variable')
 const projectId = process.env.NEXT_PUBLIC_PROJECT_ID
+console.log("process.env.NEXT_PUBLIC_BOT_URL", process.env.NEXT_PUBLIC_BOT_URL)
+console.log("process.env.NEXT_PUBLIC_PROJECT_ID", process.env.NEXT_PUBLIC_PROJECT_ID)
 
 // 2. Configure wagmi client
 const chains = [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum]
