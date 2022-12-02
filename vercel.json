@@ -1,9 +1,0 @@
-{
-    "rewrites": [
-        {
-            "source": "/bot/(.*)",
-            "destination":"/api/proxy"
-    
-        }
-    ]
-}
