@@ -1,4 +1,4 @@
-import createProxyMiddleware from "http-proxy-middleware"
+import {createProxyMiddleware} from "http-proxy-middleware"
 
 export default function (req, res) {
     let target= ""
